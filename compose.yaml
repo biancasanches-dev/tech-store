@@ -1,0 +1,9 @@
+services:
+  mariadb:
+    image: 'mariadb:latest'
+    environment:
+      - 'MARIADB_DATABASE=mydatabase'
+      - 'MARIADB_ALLOW_EMPTY_ROOT_PASSWORD=yes'
+      - 'MARIADB_ROOT_PASSWORD=rootpassword'
+    ports:
+      - '3305:3306'
